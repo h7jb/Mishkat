@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: azkar-quran-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: CLIENT_ID
+        sync: false
+      - key: PORT
+        value: 3000
