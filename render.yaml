@@ -3,7 +3,7 @@ services:
     name: azkar-quran-bot
     env: node
     plan: free
-    buildCommand: npm install
+    buildCommand: npm install --build-from-source=sqlite3
     startCommand: npm start
     envVars:
       - key: DISCORD_TOKEN
